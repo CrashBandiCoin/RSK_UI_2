@@ -30,7 +30,12 @@ const AdminNavbar = (props) => {
           </Link>
 
           <Nav className="align-items-center d-none d-md-flex" navbar>
-            
+          <button
+            className="btn btn-primary rounded-pill"
+            type="button"
+          >
+          Connect Wallet
+          </button>
           </Nav>
         </Container>
       </Navbar>
