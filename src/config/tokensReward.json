@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SUGAR",
+    "pathImg": "/images/tokens/bsc/sugar.png",
+    "blockchain": "BSC",
+    "contract": ""
+  },
+  {
+    "name": "JAGGERY",
+    "pathImg": "/images/tokens/jaggery.png",
+    "blockchain": "RSK",
+    "contract": ""
+  },
+  {
+    "name": "JAGGERY_TEST",
+    "pathImg": "/images/tokens/jaggery.png",
+    "blockchain": "RSK_TEST",
+    "contract": ""
+  }
+]

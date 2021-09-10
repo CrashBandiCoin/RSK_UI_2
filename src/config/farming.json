@@ -1,0 +1,19 @@
+{
+  "farming": [
+    {
+      "name": "MasterChef",
+      "blockchain": "BSC",
+      "contract": ""
+    },
+    {
+      "name": "MasterChef",
+      "blockchain": "RSK",
+      "contract": ""
+    },
+    {
+      "name": "MasterChef",
+      "blockchain": "RSK_TEST",
+      "contract": ""
+    }
+  ]
+}

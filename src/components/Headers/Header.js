@@ -18,6 +18,7 @@
 
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import data from "config/token.json";
 
 const Header = () => {
   return (
@@ -36,7 +37,7 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          $NAME_TOKEN_1
+                          {data.name}
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
                           $SUPPLY_TOKEN_1
@@ -118,5 +119,6 @@ const Header = () => {
     </>
   );
 };
+
 
 export default Header;
