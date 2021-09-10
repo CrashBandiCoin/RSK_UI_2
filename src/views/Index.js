@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import { useState } from "react";
 // node.js library that concatenates classes (strings)
 import classnames from "classnames";
@@ -175,7 +158,7 @@ const Index = (props) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">/argon/</th>
+                    <th scope="row">/</th>
                     <td>4,569</td>
                     <td>340</td>
                     <td>
@@ -183,7 +166,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/index.html</th>
+                    <th scope="row">/index.html</th>
                     <td>3,985</td>
                     <td>319</td>
                     <td>
@@ -192,7 +175,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/charts.html</th>
+                    <th scope="row">/charts.html</th>
                     <td>3,513</td>
                     <td>294</td>
                     <td>
@@ -201,7 +184,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/tables.html</th>
+                    <th scope="row">/tables.html</th>
                     <td>2,050</td>
                     <td>147</td>
                     <td>
@@ -209,7 +192,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/profile.html</th>
+                    <th scope="row">/profile.html</th>
                     <td>1,795</td>
                     <td>190</td>
                     <td>
