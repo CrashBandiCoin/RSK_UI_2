@@ -6,28 +6,28 @@ var routes = [
   {
     path: "/index",
     name: "Home",
-    icon: "ni ni-tv-2 text-primary",
+    icon: "fas fa-mug-hot text-primary",
     component: Index,
     layout: "/admin",
   },
   {
     path: "/icons",
     name: "Swap",
-    icon: "", //TODO icone swap
+    icon: "fas fa-exchange-alt text-primary",
     component: Icons,
     layout: "/admin",
   },
   {
     path: "",
     name: "Farms",
-    icon: "", //TODO icone Farms
+    icon: "fas fa-tractor text-primary",
     component: Tables,
     layout: "/admin",
   },
   {
     path: "",
     name: "Pools",
-    icon: "", //TODO icone Pools
+    icon: " text-primary", //TODO icone Pools
     component: Tables,
     layout: "",
   },
