@@ -1,6 +1,7 @@
 import Index from "views/Index.js";
-import Tables from "views/examples/Tables.js";
-import Icons from "views/examples/Icons.js";
+import Swap from "views/features/Swap";
+import Farms from "views/features/Farms";
+import Pools from "views/features/Pools";
 
 var routes = [
   {
@@ -14,21 +15,21 @@ var routes = [
     path: "icons",
     name: "Swap",
     icon: "fas fa-exchange-alt text-primary",
-    component: Icons,
+    component: Swap,
     layout: "/",
   },
   {
     path: "farms",
     name: "Farms",
     icon: "fas fa-tractor text-primary",
-    component: Tables,
+    component: Farms,
     layout: "/",
   },
   {
     path: "pools",
     name: "Pools",
     icon: " text-primary", //TODO icone Pools
-    component: Tables,
+    component: Pools,
     layout: "/",
   },
 ];
