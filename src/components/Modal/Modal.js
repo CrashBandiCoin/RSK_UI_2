@@ -3,20 +3,55 @@ import React from 'react';
 const Modal = (props) => {
     console.log(props.show);
     return (
-        <div>
-            <div className="modal-wrapper back-shed"
-            style={{display: props.show ? 'block' : 'none'}}>
-                <div className="modal-header">
-                    <h2>Modal Header</h2>
-                    <span className="close-modal-btn" onClick={props.close}>×</span>
-                </div>
-                <div className="modal-body">
-                    <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </div>
-                <div className="modal-footer">
-                    <p>This is Modal footer</p>
+        <div class="modal" style={{display: props.show ? 'block' : 'none'}}>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Connect to a wallet</h3>
+
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="rounded rounded list-group-item d-flex justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                            Metamask
+
+                            </li>
+                            <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+
+                            TrustWallet
+                            </li>
+                            <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+
+                            MathWallet
+                            </li>
+                            <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+
+                            TokenPocket
+                            </li>
+                            <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+
+                            WalletConnect
+
+                            </li>
+                            <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+
+                            Binance Chain Wallet
+                            </li>
+                            <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                            Safe Pall Walet
+                            </li>
+                         </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onClick={props.close}>Close</button>
+                    </div>
                 </div>
             </div>
         </div>
