@@ -10,7 +10,7 @@ const Header = () => {
             {/* Card stats */}
             <Row>
             {tokenReward.map((token, index) => (
-                <Col lg="6" xl="4" data-index={index}>
+                <Col lg="6" xl="4" key={index}>
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody>
                       <Row>
@@ -19,19 +19,18 @@ const Header = () => {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            {token.name}
+                              <img
+                                alt={'logo ' + token.name}
+                                className="img-fluid logo-crypto-header"
+                                src={process.env.PUBLIC_URL + token.pathImg} //TODO assets
+                              />
+                              {token.name}
+
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             $SUPPLY_TOKEN_REWARD
                           </span>
                         </div>
-                        <Col className="col-auto">
-                        <img
-                          alt="super"
-                          className="navbar-brand-img"
-                          src={token.pathImg} //TODO assets
-                        />
-                        </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">

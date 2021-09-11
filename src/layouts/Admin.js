@@ -21,7 +21,7 @@ const Admin = (props) => {
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -53,7 +53,7 @@ const Admin = (props) => {
         {...props}
         routes={routes}
         logo={{
-          innerLink: "/admin/index",
+          innerLink: "/index",
           imgSrc: require("../assets/img/tokens/logo.png").default,
           imgAlt: "...",
         }}
@@ -65,7 +65,6 @@ const Admin = (props) => {
         />
         <Switch>
           {getRoutes(routes)}
-          <Redirect from="*" to="/admin/index" />
         </Switch>
         <Container fluid>
           <AdminFooter />

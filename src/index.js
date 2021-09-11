@@ -14,10 +14,12 @@ import AdminLayout from "layouts/Admin.js";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-      <Redirect from="/" to="/admin/index" />
-    </Switch>
+        <Switch>
+            <Route exact path="/">
+                <Redirect to="/home" />
+            </Route>
+            <Route path="" render={(props) => <AdminLayout {...props} />} />
+        </Switch>
   </BrowserRouter>,
   document.getElementById("root")
 );

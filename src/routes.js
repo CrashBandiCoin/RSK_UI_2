@@ -4,32 +4,32 @@ import Icons from "views/examples/Icons.js";
 
 var routes = [
   {
-    path: "/index",
+    path: "home",
     name: "Home",
     icon: "fas fa-mug-hot text-primary",
     component: Index,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "/icons",
+    path: "icons",
     name: "Swap",
     icon: "fas fa-exchange-alt text-primary",
     component: Icons,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "",
+    path: "farms",
     name: "Farms",
     icon: "fas fa-tractor text-primary",
     component: Tables,
-    layout: "/admin",
+    layout: "/",
   },
   {
-    path: "",
+    path: "pools",
     name: "Pools",
     icon: " text-primary", //TODO icone Pools
     component: Tables,
-    layout: "",
+    layout: "/",
   },
 ];
 export default routes;
