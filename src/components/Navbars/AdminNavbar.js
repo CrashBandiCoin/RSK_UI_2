@@ -16,23 +16,51 @@ import {
   Container,
   Media,
 } from "reactstrap";
+import Modal from "components/Modal/Modal.js";
+import React, { useState } from 'react';
 
-const AdminNavbar = (props) => {
+export default class AdminNavbar extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            showModal: false
+        }
+    }
+
+    openModal = () => {
+        this.setState({
+            showModal: true
+        });
+    }
+
+    closeModal = () => {
+        this.setState({
+            showModal: false
+        });
+    }
+
+render() {
   return (
     <>
+        <Modal
+          className="modal"
+          show={this.state.showModal}
+          close={this.closeModal}>
+        </Modal>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
         <Container fluid>
           <Link
             className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
             to="/"
           >
-            {props.brandText}
+            {this.props.brandText}
           </Link>
 
           <Nav className="align-items-center d-none d-md-flex" navbar>
           <button
             className="btn btn-primary rounded-pill"
             type="button"
+            onClick={this.openModal}
           >
           Connect Wallet
           </button>
@@ -42,5 +70,4 @@ const AdminNavbar = (props) => {
     </>
   );
 };
-
-export default AdminNavbar;
+}
