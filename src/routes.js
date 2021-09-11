@@ -5,24 +5,31 @@ import Icons from "views/examples/Icons.js";
 var routes = [
   {
     path: "/index",
-    name: "Dashboard",
+    name: "Home",
     icon: "ni ni-tv-2 text-primary",
     component: Index,
     layout: "/admin",
   },
   {
     path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
+    name: "Swap",
+    icon: "", //TODO icone swap
     component: Icons,
     layout: "/admin",
   },
   {
-    path: "/tables",
-    name: "Tables",
-    icon: "ni ni-bullet-list-67 text-red",
+    path: "",
+    name: "Farms",
+    icon: "", //TODO icone Farms
     component: Tables,
     layout: "/admin",
+  },
+  {
+    path: "",
+    name: "Pools",
+    icon: "", //TODO icone Pools
+    component: Tables,
+    layout: "",
   },
 ];
 export default routes;

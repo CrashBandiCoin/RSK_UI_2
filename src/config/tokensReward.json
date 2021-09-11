@@ -2,19 +2,19 @@
   {
     "name": "SUGAR",
     "pathImg": "/images/tokens/bsc/sugar.png",
-    "blockchain": "BSC",
+    "chainID": "56",
     "contract": ""
   },
   {
     "name": "JAGGERY",
     "pathImg": "/images/tokens/jaggery.png",
-    "blockchain": "RSK",
+    "blockchain": "30",
     "contract": ""
   },
   {
     "name": "JAGGERY_TEST",
     "pathImg": "/images/tokens/jaggery.png",
-    "blockchain": "RSK_TEST",
+    "blockchain": "31",
     "contract": ""
   }
 ]

@@ -36,6 +36,8 @@ import {
   Col,
 } from "reactstrap";
 
+
+
 var ps;
 
 const Sidebar = (props) => {
@@ -85,6 +87,8 @@ const Sidebar = (props) => {
     };
   }
 
+  const logoTeaSwap = `${process.env.PUBLIC_URL}/logo.png`;
+
   return (
     <Navbar
       className="navbar-vertical fixed-left navbar-light bg-white"
@@ -106,7 +110,7 @@ const Sidebar = (props) => {
             <img
               alt={logo.imgAlt}
               className="navbar-brand-img"
-              src={logo.imgSrc}
+              src={logoTeaSwap} //TODO public/images/logo.png
             />
           </NavbarBrand>
         ) : null}
