@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactTooltip from "react-tooltip";
+
 
 const Modal = (props) => {
     console.log(props.show);
@@ -13,19 +15,26 @@ const Modal = (props) => {
                     <div class="modal-body">
                         <ul class="list-group">
                             <li class="rounded rounded list-group-item d-flex justify-content-start align-items-center">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
-                            Metamask
+
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                                Metamask
+                                <i data-tip='see documentation at https://docs.metamask.io/guide/#why-metamask' data-event='click focus' className="fas fa-info-circle" />
+                                <ReactTooltip clickable={true} data-event='click' data-event-off='dblclick'/>
 
                             </li>
                             <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
 
-                            TrustWallet
+                                TrustWallet
+                                <i data-tip='see documentation at https://docs.metamask.io/guide/#why-metamask' data-event='click focus' className="fas fa-info-circle" />
+                                <ReactTooltip clickable={true} data-event='click' data-event-off='dblclick'/>
                             </li>
                             <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
 
-                            MathWallet
+                                MathWallet
+                                <i data-tip='see documentation at https://docs.metamask.io/guide/#why-metamask' data-event='click focus' className="fas fa-info-circle" />
+                                <ReactTooltip clickable={true} data-event='click' data-event-off='dblclick'/>
                             </li>
                             <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
                             <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
@@ -33,19 +42,25 @@ const Modal = (props) => {
                             TokenPocket
                             </li>
                             <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
 
-                            WalletConnect
+                                WalletConnect
+                                <i data-tip='see documentation at https://docs.metamask.io/guide/#why-metamask' data-event='click focus' className="fas fa-info-circle" />
+                                <ReactTooltip clickable={true} data-event='click' data-event-off='dblclick'/>
 
                             </li>
                             <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
 
-                            Binance Chain Wallet
+                                Binance Chain Wallet
+                                <i data-tip='see documentation at https://docs.metamask.io/guide/#why-metamask' data-event='click focus' className="fas fa-info-circle" />
+                                <ReactTooltip clickable={true} data-event='click' data-event-off='dblclick'/>
                             </li>
                             <li class="rounded list-group-item d-flex  justify-content-start align-items-center">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
-                            Safe Pall Walet
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/metamask-2728406-2261817.png" class="img-fluid" alt="quixote" />
+                                Safe Pall Walet
+                                <i data-tip='see documentation at https://docs.metamask.io/guide/#why-metamask' data-event='click focus' className="fas fa-info-circle" />
+                                <ReactTooltip clickable={true} data-event='click' data-event-off='dblclick'/>
                             </li>
                          </ul>
                     </div>
