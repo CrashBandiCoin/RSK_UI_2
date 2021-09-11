@@ -42,11 +42,6 @@ export default class AdminNavbar extends React.Component {
 render() {
   return (
     <>
-        <Modal
-          className="modal"
-          show={this.state.showModal}
-          close={this.closeModal}>
-        </Modal>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
         <Container fluid>
           <Link
@@ -67,6 +62,10 @@ render() {
           </Nav>
         </Container>
       </Navbar>
+      <Modal
+        show={this.state.showModal}
+        close={this.closeModal}>
+      </Modal>
     </>
   );
 };
