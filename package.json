@@ -4,10 +4,7 @@
   "private": true,
   "description": "UI TeaSwap",
   "main": "index.js",
-<<<<<<< HEAD
-=======
   "homepage": "https://localhost:3000/dashboard",
->>>>>>> 44cd32f1af6e07d69b2ca3b828d10a8320e5997c
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
