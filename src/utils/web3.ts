@@ -4,9 +4,8 @@ import { AbiItem } from 'web3-utils'
 import { ContractOptions } from 'web3-eth-contract'
 import getRpcUrl from 'utils/getRpcUrl'
 
-const RPC_URL = process.env.REACT_APP_NODE_RSK_TEST
-
-const httpProvider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co", { timeout: 10000 } as HttpProviderOptions)
+const RPC_URL = getRpcUrl()
+const httpProvider = new Web3.providers.HttpProvider(RPC_URL, { timeout: 10000 } as HttpProviderOptions)
 
 /**
  * Provides a web3 instance using our own private provider httpProver
