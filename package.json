@@ -1,13 +1,10 @@
 {
-  "name": "rsk-ui",
+  "name": "TeaSwap",
   "version": "0.0.1",
   "private": true,
-  "description": "Front of Dapp for RSk blockchain",
+  "description": "UI TeaSwap",
   "main": "index.js",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
-  },
-  "homepage": "https://demos.creative-tim.com/argon-dashboard-react/",
+  "homepage": "https://localhost:3000/dashboard",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

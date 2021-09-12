@@ -1,0 +1,14 @@
+[
+  {
+    "name": "BSC",
+    "pathImg": "/images/blockchain/bsc.png"
+  },
+  {
+    "name": "RSK",
+    "pathImg": "/images/blockchain/rsk.png"
+  },
+  {
+    "name": "RSK_TEST",
+    "pathImg": "/images/blockchain/rsk.png"
+  }
+]

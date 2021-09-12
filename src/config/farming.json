@@ -1,5 +1,4 @@
-{
-  "farming": [
+[
     {
       "name": "MasterChef",
       "blockchain": "BSC",
@@ -15,5 +14,4 @@
       "blockchain": "RSK_TEST",
       "contract": ""
     }
-  ]
-}
+]
