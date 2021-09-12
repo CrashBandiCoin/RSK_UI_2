@@ -1,20 +1,16 @@
 [
-  {
-    "name": "SUGAR",
-    "pathImg": "/images/tokens/rsk/sugar.png",
-    "chainID": "56",
-    "contract": ""
-  },
-  {
-    "name": "JAGGERY",
-    "pathImg": "/images/tokens/mint.png",
-    "blockchain": "30",
-    "contract": ""
-  },
-  {
-    "name": "JAGGERY_TEST",
-    "pathImg": "/images/tokens/teasport.png",
-    "blockchain": "31",
-    "contract": ""
-  }
+    "rsk":
+        {
+            "name": "SUGAR",
+            "pathImg": "/images/tokens/rsk/sugar.png",
+            "chainID": "56",
+            "contract": ""
+        },
+    "bsc":
+        {
+            "name": "JAGGERY",
+            "pathImg": "/images/tokens/mint.png",
+            "blockchain": "30",
+            "contract": ""
+        }
 ]

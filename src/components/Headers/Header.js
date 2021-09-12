@@ -1,5 +1,5 @@
 import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
-import tokenReward from "config/tokensReward.json";
+import tokenReward from "config/token.json";
 
 const Header = () => {
   return (

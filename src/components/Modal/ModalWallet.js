@@ -10,8 +10,7 @@ import WalletConnect from './icons/WalletConnect.js';
 import BinanceChain from './icons/BinanceChain.js';
 
 
-const Modal = (props) => {
-    console.log(props.show);
+const ModalWallet = (props) => {
     return (
         <div class="modal" style={{display: props.show ? 'block' : 'none'}}>
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -73,4 +72,4 @@ const Modal = (props) => {
     )
 }
 
-export default Modal;
+export default ModalWallet;

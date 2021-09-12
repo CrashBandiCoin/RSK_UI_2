@@ -53,15 +53,18 @@ const Index = (props) => {
       <Container className="mt--7" fluid>
         <Row>
           <Col xl="4">
+          <Card className="bg-gradient-default shadow trading-viewe">
+
             <TradingViewWidget
                 symbol="BTC"
                 theme={Themes.DARK}
                 locale="en"
                 autosize
             />
+            </Card>
         </Col>
           <Col xl="4">
-            <Card className="bg-gradient-default shadow">
+            <Card className="bg-gradient-default shadow trading-viewe">
               <TradingViewWidget
                   symbol="ETH"
                   theme={Themes.DARK}
@@ -71,7 +74,7 @@ const Index = (props) => {
             </Card>
           </Col>
           <Col xl="4">
-            <Card className="bg-gradient-default shadow">
+            <Card className="bg-gradient-default shadow trading-viewe">
               <TradingViewWidget
                   symbol="LTC"
                   theme={Themes.DARK}

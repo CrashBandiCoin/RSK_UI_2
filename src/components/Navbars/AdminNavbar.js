@@ -16,26 +16,42 @@ import {
     Container,
     Media,
 } from "reactstrap";
-import Modal from "components/Modal/Modal.js";
+import ModalWallet from "components/Modal/ModalWallet.js";
+import ModalBlockChain from "components/Modal/ModalBlockChain.js";
 import React, {useState} from 'react';
 
 export default class AdminNavbar extends React.Component {
     constructor() {
         super();
         this.state = {
-            showModal: false
+            showModalWallet: false,
+            showModalBc: false
         }
     }
 
-    openModal = () => {
+    openModalWallet = () => {
         this.setState({
-            showModal: true
+            showModalWallet: true
+        });
+
+    }
+
+    openModalBc = () => {
+        this.setState({
+            showModalBc: true
+        });
+
+    }
+
+    closeModalWallet = () => {
+        this.setState({
+            showModalWallet: false
         });
     }
 
-    closeModal = () => {
+    closeModalBc = () => {
         this.setState({
-            showModal: false
+            showModalBc: false
         });
     }
 
@@ -54,25 +70,26 @@ export default class AdminNavbar extends React.Component {
                             <button
                                 className="btn btn-primary rounded-pill"
                                 type="button"
-                                onClick={this.openModal}
+                                onClick={this.openModalBc}
+                                disabled={this.state.showModalWallet}
+
                             >
-                                RSK //TODO recuperer les noms des blockchains et les images depuis le fichier de config : blockchain.json le meme type de modal que connect wallet
+                                Choose blockchain
                             </button>
 
                             <button
                                 className="btn btn-primary rounded-pill"
                                 type="button"
-                                onClick={this.openModal}
+                                onClick={this.openModalWallet}
+                                disabled={this.state.showModalBc}
                             >
                                 Connect Wallet
                             </button>
                         </Nav>
                     </Container>
                 </Navbar>
-                <Modal
-                    show={this.state.showModal}
-                    close={this.closeModal}>
-                </Modal>
+                <ModalWallet show={this.state.showModalWallet} close={this.closeModalWallet} />
+                <ModalBlockChain show={this.state.showModalBc} close={this.closeModalBc} />
             </>
         );
     };
