@@ -5,14 +5,14 @@ import Pools from "views/features/Pools";
 
 var routes = [
   {
-    path: "home",
-    name: "Home",
+    path: "dashboard",
+    name: "Dashboard",
     icon: "fas fa-mug-hot text-primary",
     component: Index,
     layout: "/",
   },
   {
-    path: "icons",
+    path: "swap",
     name: "Swap",
     icon: "fas fa-exchange-alt text-primary",
     component: Swap,

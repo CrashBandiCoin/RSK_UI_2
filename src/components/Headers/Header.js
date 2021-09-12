@@ -28,15 +28,15 @@ const Header = () => {
 
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
-                            $SUPPLY_TOKEN_REWARD
+                            1 000 000
                           </span>
                         </div>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">
-                          <i className="fa fa-arrow-up" />$PERF_TOKEN_REWARD %
+                          <i className="fa fa-arrow-up" /> 30 %
                         </span>{" "}
-                        <span className="text-nowrap">$PRICE_TOKEN_REWARD</span>
+                        <span className="text-nowrap">10 $</span>
                       </p>
                     </CardBody>
                   </Card>
